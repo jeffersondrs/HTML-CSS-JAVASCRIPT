@@ -1,0 +1,69 @@
+.footer a {
+  text-decoration: none;
+}
+.footer {
+  background-color: blueviolet;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 40px;
+  padding: 5px 10px 0px 10px;
+  opacity: 0.9;
+  margin-right: 0;
+
+}
+.allRight {
+  color: rgb(255, 255, 255);
+  flex-wrap: wrap;
+  flex-direction: row;
+  
+}
+.git:hover {
+  background-color: black;
+  border-radius: 100%;
+  justify-content: center;
+  padding: 0;
+  height: 35px;
+}
+
+.linkedin:hover {
+  background-color: black;
+  border-radius: 100%;
+  justify-content: center;
+  padding: 0;
+  height: 35px;
+}
+.twitter:hover {
+  background-color: black;
+  border-radius: 100%;
+  justify-content: center;
+  padding: 0;
+  height: 35px;
+}
+.instagram:hover {
+  background-color: black;
+  border-radius: 22%;
+  justify-content: center;
+  padding: 0;
+  height: 35px;
+}
+.face:hover {
+  background-color: black;
+  border-radius: 100%;
+  justify-content: center;
+  padding: 0;
+  height: 35px;
+}
+.whatsapp:hover {
+  background-color: black;
+  border-radius: 100%;
+  justify-content: center;
+  padding: 0;
+  height: 35px;
+}

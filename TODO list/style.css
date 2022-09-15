@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap');
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #ffff;
+    font-family: Signika, sans-serif;
+    background-color: rgb(19, 121, 114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.body{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+   color: rgb(196, 196, 196); 
+   font-size: 5rem;
+   opacity: 0.9;
+   width: 100%;
+   text-align: center;
+   display: block;
+   text-transform: uppercase;
+}
+
+form{
+    box-shadow: o 4px 10px rgba(0,0,0,0.1);
+    max-width: 100%;
+    width: 650px;
+}
+
+.input{
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    background-color: rgb(70, 0, 136);
+}
+.input:focus{
+    outline-color: rgb(179, 131, 336);
+}
+
+.input::placeholder{
+    color: #d5d5d5;
+}
+
+.lista{
+    background-color: rgb(52, 48, 236);
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.lista li{
+    border-top: 1px solid #ffffff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+.lista li.completed{
+    color: #b6b6b6;
+    text-decoration: line-through;
+}
+
+small{
+    color: #ffffff;
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 2rem;
+}

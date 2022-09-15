@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/records.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <script src="script.js" defer></script>
+    <title>Cadastro de Produtos</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header-title">Cadastro de Produtos</h1>
+    </header>
+    <main>
+      <div class="searching">
+        <button type="button" class="button blue mobile" id="cadastrarProduto">
+          Cadastrar Produtos
+        </button>
+        <div>
+          <input type="text" id="seach" class="seach" placeholder="Buscar" />
+          <button id="search">Buscar
+          </button>
+        </div>
+      </div>
+      <table id="tableProtudo" class="records">
+        <thead>
+          <tr>
+            <th>Nome Produto</th>
+            <th>Fabricante</th>
+            <th>Tipo</th>
+            <th>Quantidade</th>
+            <th>Valor Unitário</th>
+            <th>Edição</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h2>Novo Produto</h2>
+            <span class="modal-close" id="modalClose">&#10006;</span>
+          </header>
+          <form id="form" class="modal-form">
+            <input
+              type="text"
+              id="name"
+              data-index="new"
+              class="modal-field"
+              placeholder="nome produto"
+              required
+            />
+            <select
+              id="fabricante"
+              data-index="new"
+              class="modal-field select"
+              required
+            >
+              <option value="nestle">Nestlé</option>
+              <option value="garoto">Garoto</option>
+              <option value="coca-cola">Coca-Cola</option>
+              <option value="vigor">Vigor</option>
+            </select>
+            <select
+              id="tipo"
+              class="modal-field select"
+              placeholder="categoria do produto"
+              required
+            >
+              <option value="bebida">Bebida</option>
+              <option value="alimento">Alimento</option>
+              <option value="limpeza">Limpeza</option>
+              <option value="higiene">Higiene</option>
+            </select>
+            <input
+              type="number"
+              id="quantidade"
+              class="modal-field"
+              placeholder="quantidade"
+              required
+            />
+            <input
+              type="number"
+              id="preco"
+              class="modal-field"
+              placeholder="valor unitário"
+              required
+            />
+          </form>
+          <footer class="modal-footer">
+            <button id="saveProduto" class="button green">
+              Adicionar produto
+            </button>
+          </footer>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </main>
+  </body>
+</html>
